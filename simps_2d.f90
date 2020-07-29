@@ -3,7 +3,7 @@ module simps_2d
     implicit none
 contains
 
-subroutine trap_vec(results, fxy, S, x, y)
+subroutine simps2d(results, fxy, S, x, y)
 
 
 ! IN-/OUTPUT
@@ -45,7 +45,7 @@ do i = 1, nx
 end do
 
 return 
-end subroutine trap_vec
+end subroutine simps2d
 end module simps_2d
 
 
